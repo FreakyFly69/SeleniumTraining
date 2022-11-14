@@ -19,9 +19,21 @@ public class TypeOfLocator3 {
 //		firstname.sendKeys("firstname");
 		
 		
-		WebElement alreadyaccountlink = driver.findElement(By.linkText("Already have an account?"));
-	
-		alreadyaccountlink.click();
+//		WebElement alreadyaccountlink = driver.findElement(By.linkText("Already have an account?"));
+//	
+//		alreadyaccountlink.click();
+		
+//		partial link text
+				
+		WebElement link2 = driver.findElement(By.partialLinkText("have an account?"));
+			
+		link2.click();
+		
+//		tagname
+		
+		WebElement firstname = driver.findElement(By.tagName("input"));
+		
+		firstname.sendKeys("Firstname");
 		
 		
 	}
