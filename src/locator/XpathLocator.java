@@ -31,10 +31,13 @@ public class XpathLocator {
 
 		lastname.sendKeys("Corporate");
 		
-		
+//		contains():
 		WebElement mobilenumber = driver.findElement(By.xpath("//*[contains(@id,'u_0_g_')]"));
 		
 		mobilenumber.sendKeys("9988776655");
+		
+//		indexing:
+		
 		
 		
 
