@@ -11,7 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class FindElements {
 	public static void main(String[] args) throws InterruptedException {
 		
-		WebDriver driver = new FirefoxDriver();
+		WebDriver driver = new ChromeDriver();
 
 		driver.manage().window().maximize();
 
@@ -34,7 +34,7 @@ public class FindElements {
 		
 		driver.findElement(By.xpath("(//*[@class='oxd-main-menu-item'])[1]")).click();
 		
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		
 		
 		

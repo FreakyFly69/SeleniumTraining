@@ -39,8 +39,19 @@ public class XpathLocator {
 //		indexing:
 		
 		
+//		driver.findElement(By.xpath("(//*[@class='oxd-main-menu-item'])[1]")).click();
 		
-
+// text()
+		
+		WebElement text = driver.findElement(By.xpath("//*[text()='Create a new account']"));
+		
+		String message = text.getText();
+		
+		System.out.println(message);
+		
+		
+		
+		
 	}
 
 }
