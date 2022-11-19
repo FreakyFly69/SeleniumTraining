@@ -1,10 +1,14 @@
 package dropdownhandling;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+
+import utility.Screenshot;
 
 public class SelectDropdownHandling {
 	
@@ -15,7 +19,7 @@ public class SelectDropdownHandling {
 		selday.selectByVisibleText(value);
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
 		WebDriver driver = new ChromeDriver();
 
@@ -42,6 +46,10 @@ public class SelectDropdownHandling {
 		Select selyear = new Select(year);
 		
 		selyear.selectByIndex(6);
+		
+		Screenshot s = new Screenshot();
+		
+		s.captureScreenShot(driver, "dropdownscreenshot");
 		 
 		 
 		

@@ -6,9 +6,9 @@ public class Test {
 	
 	
 	public static void main(String[] args) {
-		String path = "F:\\Desktop\\Katraj\\20 Aug Katraj\\Selenium\\paytm.png";
+		String path = System.getProperty("user.dir");
 		
-		File destination = new File(path);
+		System.out.println(path);
 	}
 
 }
