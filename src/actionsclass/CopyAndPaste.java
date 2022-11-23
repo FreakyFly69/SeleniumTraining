@@ -28,9 +28,11 @@ public class CopyAndPaste {
 		
 //		performing CTRL + C operation
 		
-		
+		act.keyDown(Keys.CONTROL).sendKeys("c").keyUp(Keys.CONTROL).build().perform();
+
 //		performing CTRL + V operation	
 		
+		act.sendKeys(Keys.TAB).keyDown(Keys.CONTROL).sendKeys("v").keyUp(Keys.CONTROL).build().perform();
 		
 		 WebElement mobilenumber = driver.findElement(By.xpath("//*[@name='reg_email__']"));
 		
