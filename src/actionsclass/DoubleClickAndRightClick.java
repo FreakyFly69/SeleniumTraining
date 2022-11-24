@@ -21,8 +21,13 @@ public class DoubleClickAndRightClick {
 	
 		Actions act = new Actions(driver);
 		
+//		to perform double click operation
 		
-		act.doubleClick(doubleclickelement).perform();
+//		act.doubleClick(doubleclickelement).perform();
+		
+//		to perform right click operation
+		
+		act.contextClick(doubleclickelement).perform();
 		
 		
 	}
