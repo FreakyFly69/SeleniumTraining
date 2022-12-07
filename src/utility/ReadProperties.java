@@ -12,6 +12,22 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class ReadProperties {
 	
+	public static String readProp(String value) throws IOException
+	{
+		Properties prop = new Properties();
+		
+		String path = System.getProperty("user.dir")+"//config.properties";
+		
+		FileInputStream fis = new FileInputStream(path);
+		
+		prop.load(fis);
+		
+		String valuefromconfig = prop.getProperty(value);
+		
+		return valuefromconfig;
+	}
+	
+	
 	
 	public static void main(String[] args) throws IOException {
 		Properties prop = new Properties();

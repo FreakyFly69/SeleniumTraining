@@ -2,25 +2,28 @@ package testngdiscussion;
 
 import org.testng.annotations.Test;
 
-public class PriorityKeyword {
+public class DependsOnMethodKeyword {
 	
 	
 	@Test(priority = 1)
 	public void login()
 	{
 		System.out.println("Login testcase");
+		
+		throw new NullPointerException();
 	}
 	
 	
 
-	@Test
+	@Test(dependsOnMethods = "login", priority = 2)
 	public void home()
 	{
 		System.out.println("home testcase");
+		
 	}
 	
 	
-	@Test(priority = -3)
+	@Test(priority = 3)
 	public void timeline()
 	{
 		System.out.println("timeline testcase");
@@ -31,7 +34,7 @@ public class PriorityKeyword {
 	public void profile()
 	{
 		System.out.println("profile testcase");
-		throw new ArithmeticException();
+		
 	}
 	
 	
@@ -40,7 +43,5 @@ public class PriorityKeyword {
 	{
 		System.out.println("logout testcase");
 	}
-	
-	
 
 }

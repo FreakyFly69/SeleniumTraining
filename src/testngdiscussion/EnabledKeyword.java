@@ -2,9 +2,9 @@ package testngdiscussion;
 
 import org.testng.annotations.Test;
 
-public class PriorityKeyword {
+public class EnabledKeyword {
 	
-	
+
 	@Test(priority = 1)
 	public void login()
 	{
@@ -20,7 +20,7 @@ public class PriorityKeyword {
 	}
 	
 	
-	@Test(priority = -3)
+	@Test(priority = -3, enabled = false)
 	public void timeline()
 	{
 		System.out.println("timeline testcase");
@@ -31,7 +31,7 @@ public class PriorityKeyword {
 	public void profile()
 	{
 		System.out.println("profile testcase");
-		throw new ArithmeticException();
+		
 	}
 	
 	

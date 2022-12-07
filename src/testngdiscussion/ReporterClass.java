@@ -1,14 +1,18 @@
 package testngdiscussion;
 
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class PriorityKeyword {
+public class ReporterClass {
 	
 	
+
 	@Test(priority = 1)
 	public void login()
 	{
 		System.out.println("Login testcase");
+		Reporter.log("Login test got passed", true);
+		
 	}
 	
 	
@@ -17,6 +21,7 @@ public class PriorityKeyword {
 	public void home()
 	{
 		System.out.println("home testcase");
+		Reporter.log("Home test got passed", true);
 	}
 	
 	
@@ -31,7 +36,7 @@ public class PriorityKeyword {
 	public void profile()
 	{
 		System.out.println("profile testcase");
-		throw new ArithmeticException();
+		
 	}
 	
 	
