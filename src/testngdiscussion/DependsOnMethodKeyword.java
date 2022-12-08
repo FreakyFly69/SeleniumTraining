@@ -1,5 +1,6 @@
 package testngdiscussion;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class DependsOnMethodKeyword {
@@ -10,7 +11,6 @@ public class DependsOnMethodKeyword {
 	{
 		System.out.println("Login testcase");
 		
-		throw new NullPointerException();
 	}
 	
 	
@@ -23,14 +23,17 @@ public class DependsOnMethodKeyword {
 	}
 	
 	
-	@Test(priority = 3)
+	@Test(priority = 3, dependsOnMethods = "home" )
 	public void timeline()
 	{
 		System.out.println("timeline testcase");
+		
+		Assert.fail("failed deliberately to check depends on method");
+		
 	}
 	
 	
-	@Test(priority = 4)
+	@Test(priority = 4, dependsOnMethods = {"home", "timeline"})
 	public void profile()
 	{
 		System.out.println("profile testcase");
@@ -42,6 +45,8 @@ public class DependsOnMethodKeyword {
 	public void logout()
 	{
 		System.out.println("logout testcase");
+		
+		Assert.fail();
 	}
 
 }
