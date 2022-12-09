@@ -5,7 +5,9 @@
     <classes>
       <class name="testngdiscussion.DependsOnMethodKeyword">
         <methods>
+          <include name="profile"/>
           <include name="login"/>
+          <include name="timeline"/>
           <include name="home"/>
         </methods>
       </class> <!-- testngdiscussion.DependsOnMethodKeyword -->
