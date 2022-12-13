@@ -76,6 +76,8 @@ public class ExcelReader {
 
 		String path = System.getProperty("user.dir") + "\\KatrajTestData.xlsx";
 
+//		To handle file in java we have to file class object
+		
 		File src = new File(path);
 
 //		to load the excel sheet we are using fileinputstream class

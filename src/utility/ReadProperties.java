@@ -1,5 +1,6 @@
 package utility;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -18,7 +19,9 @@ public class ReadProperties {
 		
 		String path = System.getProperty("user.dir")+"//config.properties";
 		
-		FileInputStream fis = new FileInputStream(path);
+		File f = new File(path);
+		
+		FileInputStream fis = new FileInputStream(f);
 		
 		prop.load(fis);
 		

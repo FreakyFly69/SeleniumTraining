@@ -1,9 +1,13 @@
 package locator;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import utility.Screenshot;
 
 public class XpathLocator {
 
@@ -15,7 +19,7 @@ public class XpathLocator {
 	
 	// *[@attribute_name = 'attribute_value']
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		WebDriver driver = new ChromeDriver();
 
@@ -35,6 +39,11 @@ public class XpathLocator {
 		WebElement mobilenumber = driver.findElement(By.xpath("//*[contains(@id,'u_0_g_')]"));
 		
 		mobilenumber.sendKeys("9988776655");
+		
+		Screenshot sc = new Screenshot();
+		
+		sc.captureScreenShot(driver, "facebook scrshot");
+		
 		
 //		indexing:
 		
