@@ -2,12 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Sanity"/>
+      </run>
+    </groups>
     <classes>
-      <class name="testngdiscussion.TestClass2">
+      <class name="testngdiscussion.GroupingOfTestCase">
         <methods>
           <include name="profile"/>
         </methods>
-      </class> <!-- testngdiscussion.TestClass2 -->
+      </class> <!-- testngdiscussion.GroupingOfTestCase -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

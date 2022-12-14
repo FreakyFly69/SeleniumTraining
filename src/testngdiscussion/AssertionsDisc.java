@@ -44,10 +44,19 @@ public class AssertionsDisc {
 	String textpresentinsidetextfield = firstname.getAttribute("value");
 	
 	Assert.assertEquals(textpresentinsidetextfield, "firstname");
+		
+	}
 	
-	
-	
-	
+	@Test(priority = 3)
+	public void isDisplayingOnPage()
+	{
+		WebElement element = driver.findElement(By.xpath("//div[@id='reg_error_inner']"));
+		
+		boolean gettingdisplay = element.isDisplayed();
+		
+//		Assert.assertTrue(gettingdisplay, "Test case fail please raise a bug");
+		
+		Assert.assertFalse(gettingdisplay, "Test case fail please raise a bug");
 	
 	
 	}

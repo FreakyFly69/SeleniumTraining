@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngdiscussion.AssertionsDisc">
+      <class name="testngdiscussion.SoftAssertDisc">
         <methods>
           <include name="validateTitle"/>
         </methods>
-      </class> <!-- testngdiscussion.AssertionsDisc -->
+      </class> <!-- testngdiscussion.SoftAssertDisc -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
