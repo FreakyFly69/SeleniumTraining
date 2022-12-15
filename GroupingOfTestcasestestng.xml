@@ -4,11 +4,13 @@
 	<test thread-count="5" name="Test">
 		<groups>
 			<run>
-				<include name="Sanity"></include>
+				<exclude name="Sanity"></exclude>
+				<exclude name="Functional"></exclude>
 			</run>
 		</groups>
 		<classes>
 			<class name="testngdiscussion.GroupingOfTestCase" />
+			<class name="testngdiscussion.GroupingOfTestCase2" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

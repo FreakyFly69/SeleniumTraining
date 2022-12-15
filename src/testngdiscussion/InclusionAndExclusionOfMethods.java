@@ -2,9 +2,9 @@ package testngdiscussion;
 
 import org.testng.annotations.Test;
 
-public class GroupingOfTestCase {
-
-	@Test(groups = {"Sanity", "Functional"})
+public class InclusionAndExclusionOfMethods {
+	
+	@Test
 	public void login()
 	{
 		System.out.println("Login testcase");
@@ -12,28 +12,28 @@ public class GroupingOfTestCase {
 	
 	
 
-	@Test(groups = {"Regression" , "Sanity"})
+	@Test(priority = 2)
 	public void home()
 	{
 		System.out.println("home testcase");
 	}
 	
 	
-	@Test(groups = "Functional")
+	@Test(priority = 1)
 	public void timeline()
 	{
 		System.out.println("timeline testcase");
 	}
 	
 	
-	@Test(groups = "Sanity")
+	@Test
 	public void profile()
 	{
 		System.out.println("profile testcase");
 	}
 	
 	
-	@Test(groups = {"Regression", "Functional"})
+	@Test
 	public void logout()
 	{
 		System.out.println("logout testcase");
@@ -45,5 +45,5 @@ public class GroupingOfTestCase {
 		System.out.println("update testcase");
 	}
 	
-	
+
 }
