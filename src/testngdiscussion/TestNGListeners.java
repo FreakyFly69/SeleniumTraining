@@ -28,7 +28,8 @@ public class TestNGListeners extends TestCase implements ITestListener {
 		
 		try {
 			sc.captureScreenShot(driver, result.getName());
-		} catch (Exception e) {
+		} 
+		catch (Exception e) {
 			
 			String message = e.getMessage();
 			

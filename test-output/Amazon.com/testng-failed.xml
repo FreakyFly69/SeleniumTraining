@@ -8,6 +8,9 @@
     <classes>
       <class name="testngdiscussion.TestCase">
         <methods>
+          <include name="enterPassword"/>
+          <include name="beforeTest"/>
+          <include name="bm"/>
           <include name="navToUrl"/>
           <include name="getTitleOfpage"/>
         </methods>

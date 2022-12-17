@@ -6,9 +6,23 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class TestCase {
+@BeforeMethod
+public void bm()
+{
+	System.out.println("Before method annotations");
+}
+
+@BeforeTest
+public void beforeTest()
+{
+	System.out.println("Before Test ");
+}
+	
 	static WebDriver driver;
 	@Test(priority = 1)
 	public void navToUrl()
@@ -48,7 +62,7 @@ public class TestCase {
 	}
 	
 	
-	@Test(priority = 3)
+	@Test(priority = 3, dependsOnMethods = "navToUrl")
 	public void enterPassword()
 	{
 		driver.findElement(By.xpath("//input[@id='ap_password']")).sendKeys("123456");
