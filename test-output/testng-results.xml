@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-17T09:03:39 IST" name="Suite" finished-at="2022-12-17T09:05:16 IST" duration-ms="97142">
+  <suite started-at="2022-12-19T08:47:33 IST" name="Suite" finished-at="2022-12-19T08:48:27 IST" duration-ms="53585">
     <groups>
     </groups>
-    <test started-at="2022-12-17T09:03:39 IST" name="Test" finished-at="2022-12-17T09:05:16 IST" duration-ms="97142">
-      <class name="testngdiscussion.ParallelTestCaseExecution">
-        <test-method signature="amazonTest()[pri:0, instance:testngdiscussion.ParallelTestCaseExecution@5b03b9fe]" started-at="2022-12-17T09:03:39 IST" name="amazonTest" finished-at="2022-12-17T09:05:16 IST" duration-ms="97021" status="PASS">
+    <test started-at="2022-12-19T08:47:33 IST" name="first test tag" finished-at="2022-12-19T08:47:56 IST" duration-ms="23098">
+      <class name="testngdiscussion.ParallelTestTagExecution1">
+        <test-method signature="facebookTest()[pri:0, instance:testngdiscussion.ParallelTestTagExecution1@7c711375]" started-at="2022-12-19T08:47:33 IST" name="facebookTest" finished-at="2022-12-19T08:47:56 IST" duration-ms="23011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebookTest -->
+      </class> <!-- testngdiscussion.ParallelTestTagExecution1 -->
+    </test> <!-- first test tag -->
+    <test started-at="2022-12-19T08:47:33 IST" name="Second test tag" finished-at="2022-12-19T08:48:27 IST" duration-ms="53585">
+      <class name="testngdiscussion.ParallelTestTagExecution2">
+        <test-method signature="amazonTest()[pri:0, instance:testngdiscussion.ParallelTestTagExecution2@6340e5f0]" started-at="2022-12-19T08:47:33 IST" name="amazonTest" finished-at="2022-12-19T08:48:27 IST" duration-ms="53503" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amazonTest -->
-        <test-method signature="testCase2()[pri:0, instance:testngdiscussion.ParallelTestCaseExecution@5b03b9fe]" started-at="2022-12-17T09:03:39 IST" name="testCase2" finished-at="2022-12-17T09:05:09 IST" duration-ms="89878" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase2 -->
-        <test-method signature="testCase3()[pri:0, instance:testngdiscussion.ParallelTestCaseExecution@5b03b9fe]" started-at="2022-12-17T09:03:39 IST" name="testCase3" finished-at="2022-12-17T09:05:09 IST" duration-ms="89578" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase3 -->
-      </class> <!-- testngdiscussion.ParallelTestCaseExecution -->
-    </test> <!-- Test -->
+      </class> <!-- testngdiscussion.ParallelTestTagExecution2 -->
+    </test> <!-- Second test tag -->
   </suite> <!-- Suite -->
 </testng-results>

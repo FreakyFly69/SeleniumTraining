@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngdiscussion.SoftAssertDisc">
+      <class name="testngdiscussion.ParallelTestCaseExecution">
         <methods>
-          <include name="validateTitle"/>
+          <include name="amazonTest"/>
+          <include name="testCase3"/>
         </methods>
-      </class> <!-- testngdiscussion.SoftAssertDisc -->
+      </class> <!-- testngdiscussion.ParallelTestCaseExecution -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

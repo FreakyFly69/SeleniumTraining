@@ -5,7 +5,7 @@
     <classes>
       <class name="testngdiscussion.ParallelTestCaseExecution">
         <methods>
-          <include name="amazonTest"/>
+          <include name="testCase2"/>
         </methods>
       </class> <!-- testngdiscussion.ParallelTestCaseExecution -->
     </classes>
