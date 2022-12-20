@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-19T08:47:33 IST" name="Suite" finished-at="2022-12-19T08:48:27 IST" duration-ms="53585">
+  <suite started-at="2022-12-20T08:53:58 IST" name="Default suite" finished-at="2022-12-20T08:54:44 IST" duration-ms="46154">
     <groups>
     </groups>
-    <test started-at="2022-12-19T08:47:33 IST" name="first test tag" finished-at="2022-12-19T08:47:56 IST" duration-ms="23098">
-      <class name="testngdiscussion.ParallelTestTagExecution1">
-        <test-method signature="facebookTest()[pri:0, instance:testngdiscussion.ParallelTestTagExecution1@7c711375]" started-at="2022-12-19T08:47:33 IST" name="facebookTest" finished-at="2022-12-19T08:47:56 IST" duration-ms="23011" status="PASS">
+    <test started-at="2022-12-20T08:53:58 IST" name="Default test" finished-at="2022-12-20T08:54:44 IST" duration-ms="46154">
+      <class name="testngdiscussion.TestCase">
+        <test-method signature="navToUrl()[pri:1, instance:testngdiscussion.TestCase@37d4349f]" started-at="2022-12-20T08:53:58 IST" name="navToUrl" finished-at="2022-12-20T08:54:12 IST" duration-ms="13976" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- facebookTest -->
-      </class> <!-- testngdiscussion.ParallelTestTagExecution1 -->
-    </test> <!-- first test tag -->
-    <test started-at="2022-12-19T08:47:33 IST" name="Second test tag" finished-at="2022-12-19T08:48:27 IST" duration-ms="53585">
-      <class name="testngdiscussion.ParallelTestTagExecution2">
-        <test-method signature="amazonTest()[pri:0, instance:testngdiscussion.ParallelTestTagExecution2@6340e5f0]" started-at="2022-12-19T08:47:33 IST" name="amazonTest" finished-at="2022-12-19T08:48:27 IST" duration-ms="53503" status="PASS">
+        </test-method> <!-- navToUrl -->
+        <test-method signature="enterUsername()[pri:2, instance:testngdiscussion.TestCase@37d4349f]" started-at="2022-12-20T08:54:12 IST" name="enterUsername" finished-at="2022-12-20T08:54:17 IST" duration-ms="5479" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- amazonTest -->
-      </class> <!-- testngdiscussion.ParallelTestTagExecution2 -->
-    </test> <!-- Second test tag -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- enterUsername -->
+        <test-method signature="enterPassword()[pri:3, instance:testngdiscussion.TestCase@37d4349f]" started-at="2022-12-20T08:54:17 IST" name="enterPassword" finished-at="2022-12-20T08:54:18 IST" duration-ms="591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterPassword -->
+        <test-method signature="getTitleOfpage()[pri:4, instance:testngdiscussion.TestCase@37d4349f]" started-at="2022-12-20T08:54:18 IST" name="getTitleOfpage" finished-at="2022-12-20T08:54:44 IST" duration-ms="25999" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTitleOfpage -->
+      </class> <!-- testngdiscussion.TestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

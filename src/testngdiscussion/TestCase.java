@@ -1,5 +1,8 @@
 package testngdiscussion;
 
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,17 +14,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class TestCase {
-@BeforeMethod
-public void bm()
-{
-	System.out.println("Before method annotations");
-}
 
-@BeforeTest
-public void beforeTest()
-{
-	System.out.println("Before Test ");
-}
 	
 	static WebDriver driver;
 	@Test(priority = 1)
@@ -37,7 +30,7 @@ public void beforeTest()
 		
 		boolean isdisp = cart.isDisplayed();
 		
-		Assert.assertTrue(false);
+//		Assert.assertTrue(false);
 		
 	}
 	
@@ -62,23 +55,47 @@ public void beforeTest()
 	}
 	
 	
-	@Test(priority = 3, dependsOnMethods = "navToUrl")
+	@Test(priority = 3)
 	public void enterPassword()
 	{
 		driver.findElement(By.xpath("//input[@id='ap_password']")).sendKeys("123456");
 		driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
 		
+		
+		
 	}
 	
 	
 	@Test(priority = 4)
-	public void getTitleOfpage()
+	public void getTitleOfpage() throws InterruptedException
 	{
-		String title = driver.getTitle();
+//		String title = driver.getTitle();
+//		
+//		boolean ispresent = title.contains("India");
+//		
+//		Assert.assertTrue(false);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		
-		boolean ispresent = title.contains("India");
+		driver.findElement(By.xpath("//*[@id='twotabsearchtextbox']")).sendKeys("mobile phone");
 		
-		Assert.assertTrue(false);
+		driver.findElement(By.xpath("//*[@id='nav-search-submit-button']")).click();
+		
+		driver.findElement(By.xpath("(//*[@data-asin='B07WJV6P1R']//h2//a)[1]")).click();
+		
+		String parent = driver.getWindowHandle();
+		
+		Set<String> allwin = driver.getWindowHandles();
+		
+		for(String id :allwin)
+		{
+			if(!(id.equals(parent)))
+			{
+				driver.switchTo().window(id);
+			}
+		}
+		
+		
+		driver.findElement(By.xpath("//*[@id='add-to-cart-button']")).click();
 		
 	}
 	

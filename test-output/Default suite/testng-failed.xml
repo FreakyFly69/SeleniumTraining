@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngdiscussion.ParallelTestCaseExecution">
+      <class name="testngdiscussion.TestCase">
         <methods>
-          <include name="amazonTest"/>
-          <include name="testCase3"/>
+          <include name="beforeTest"/>
+          <include name="bm"/>
+          <include name="getTitleOfpage"/>
         </methods>
-      </class> <!-- testngdiscussion.ParallelTestCaseExecution -->
+      </class> <!-- testngdiscussion.TestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
