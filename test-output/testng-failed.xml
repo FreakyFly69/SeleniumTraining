@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)(failed)">
     <classes>
-      <class name="testngdiscussion.TestCase">
+      <class name="testngdiscussion.FailedTestCaseExecution">
         <methods>
-          <include name="beforeTest"/>
-          <include name="bm"/>
-          <include name="getTitleOfpage"/>
+          <include name="home"/>
+          <include name="timeline"/>
         </methods>
-      </class> <!-- testngdiscussion.TestCase -->
+      </class> <!-- testngdiscussion.FailedTestCaseExecution -->
+      <class name="testngdiscussion.FailedTestCaseExecution2">
+        <methods>
+          <include name="deleteProfile"/>
+        </methods>
+      </class> <!-- testngdiscussion.FailedTestCaseExecution2 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

@@ -8,14 +8,21 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">46,154</td><td></td><td></td></tr>
+<tr><th colspan="8">Failed suite [Suite]</th></tr>
+<tr><td><a href="#t0">Test(failed)</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">190</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">testngdiscussion.TestCase</td><td><a href="#m0">enterPassword</a></td><td rowspan="1">1671506657790</td><td rowspan="1">591</td></tr><tr class="passedeven"><td><a href="#m1">enterUsername</a></td><td rowspan="1">1671506652304</td><td rowspan="1">5479</td></tr><tr class="passedeven"><td><a href="#m2">getTitleOfpage</a></td><td rowspan="1">1671506658384</td><td rowspan="1">25999</td></tr><tr class="passedeven"><td><a href="#m3">navToUrl</a></td><td rowspan="1">1671506638310</td><td rowspan="1">13976</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Failed suite [Suite]</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test(failed) &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testngdiscussion.FailedTestCaseExecution</td><td><a href="#m0">home</a></td><td rowspan="1">1671590971434</td><td rowspan="1">3</td></tr><tr class="failedodd"><td rowspan="1">testngdiscussion.FailedTestCaseExecution2</td><td><a href="#m1">deleteProfile</a></td><td rowspan="1">1671590971385</td><td rowspan="1">25</td></tr><tr><th colspan="4">Test(failed) &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testngdiscussion.FailedTestCaseExecution</td><td><a href="#m2">timeline</a></td><td rowspan="1">1671590971448</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testngdiscussion.TestCase#enterPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testngdiscussion.TestCase#enterUsername</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testngdiscussion.TestCase#getTitleOfpage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testngdiscussion.TestCase#navToUrl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test(failed)</h2><h3 id="m0">testngdiscussion.FailedTestCaseExecution#home</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at testngdiscussion.FailedTestCaseExecution.home(FailedTestCaseExecution.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testngdiscussion.FailedTestCaseExecution2#deleteProfile</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at testngdiscussion.FailedTestCaseExecution2.deleteProfile(FailedTestCaseExecution2.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testngdiscussion.FailedTestCaseExecution#timeline</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method FailedTestCaseExecution.timeline()[pri:3, instance:testngdiscussion.FailedTestCaseExecution@54a7079e] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
