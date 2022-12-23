@@ -3,17 +3,14 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testngdiscussion.FailedTestCaseExecution2">
+      <class name="testclass.HomeTest">
         <methods>
-          <include name="deleteProfile"/>
+          <include name="tearDown"/>
+          <include name="verifyTitle"/>
+          <include name="createObject"/>
+          <include name="initBrowser"/>
         </methods>
-      </class> <!-- testngdiscussion.FailedTestCaseExecution2 -->
-      <class name="testngdiscussion.FailedTestCaseExecution">
-        <methods>
-          <include name="home"/>
-          <include name="timeline"/>
-        </methods>
-      </class> <!-- testngdiscussion.FailedTestCaseExecution -->
+      </class> <!-- testclass.HomeTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
