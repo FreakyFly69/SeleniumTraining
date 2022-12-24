@@ -7,7 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class LoginPage {
 
-	private	WebDriver driver;
+private	WebDriver driver;
 
 private	By hoverelement = By.xpath("//*[@id='nav-link-accountList']");
 
@@ -37,7 +37,7 @@ private	By finalsignin = By.xpath("//*[@id='signInSubmit']");
 		
 		driver.findElement(signinhover).click();
 		
-		driver.findElement(email).sendKeys("8176867662");
+		driver.findElement(email).sendKeys("email");
 		
 		driver.findElement(continueemail).click();
 		
@@ -45,7 +45,7 @@ private	By finalsignin = By.xpath("//*[@id='signInSubmit']");
 	
 	public void enterPassword()
 	{
-		driver.findElement(passwordtext).sendKeys("123456");
+		driver.findElement(passwordtext).sendKeys("password");
 	}
 	
 	public void finalSignin()

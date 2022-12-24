@@ -1,43 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="6" passed="4" failed="0" skipped="0">
+<testng-results ignored="4" total="9" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-23T09:05:48 IST" name="Suite" finished-at="2022-12-23T09:06:04 IST" duration-ms="16179">
+  <suite started-at="2022-12-24T08:25:33 IST" name="Suite" finished-at="2022-12-24T08:26:05 IST" duration-ms="31891">
     <groups>
     </groups>
-    <test started-at="2022-12-23T09:05:48 IST" name="Test" finished-at="2022-12-23T09:06:04 IST" duration-ms="16179">
-      <class name="testclass.HomeTest">
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testclass.HomeTest@537f60bf]" started-at="2022-12-23T09:05:53 IST" name="createObject" finished-at="2022-12-23T09:05:53 IST" duration-ms="1" status="PASS">
+    <test started-at="2022-12-24T08:25:33 IST" name="Test" finished-at="2022-12-24T08:26:05 IST" duration-ms="31891">
+      <class name="testclass.BuyProductTest">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclass.BuyProductTest@65c7a252]" started-at="2022-12-24T08:25:51 IST" name="createObject" finished-at="2022-12-24T08:25:51 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createObject -->
-        <test-method signature="validateSearch()[pri:3, instance:testclass.HomeTest@537f60bf]" started-at="2022-12-23T09:05:53 IST" name="validateSearch" finished-at="2022-12-23T09:06:04 IST" duration-ms="10299" status="PASS">
+        <test-method signature="verifyaddToCart()[pri:5, instance:testclass.BuyProductTest@65c7a252]" started-at="2022-12-24T08:25:51 IST" name="verifyaddToCart" finished-at="2022-12-24T08:26:05 IST" duration-ms="14427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyaddToCart -->
+      </class> <!-- testclass.BuyProductTest -->
+      <class name="testclass.HomeTest">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclass.HomeTest@18df8434]" started-at="2022-12-24T08:25:40 IST" name="createObject" finished-at="2022-12-24T08:25:40 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createObject -->
+        <test-method signature="validateSearch()[pri:3, instance:testclass.HomeTest@18df8434]" started-at="2022-12-24T08:25:40 IST" name="validateSearch" finished-at="2022-12-24T08:25:50 IST" duration-ms="9775" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSearch -->
-        <test-method signature="verifyTitle()[pri:4, instance:testclass.HomeTest@537f60bf]" started-at="2022-12-23T09:06:04 IST" name="verifyTitle" finished-at="2022-12-23T09:06:04 IST" duration-ms="92" status="PASS">
+        <test-method signature="verifyTitle()[pri:4, instance:testclass.HomeTest@18df8434]" started-at="2022-12-24T08:25:50 IST" name="verifyTitle" finished-at="2022-12-24T08:25:51 IST" duration-ms="1003" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
       </class> <!-- testclass.HomeTest -->
       <class name="testclass.LoginTest">
-        <test-method is-config="true" signature="initBrowser()[pri:0, instance:testclass.LoginTest@51c668e3]" started-at="2022-12-23T09:05:38 IST" name="initBrowser" finished-at="2022-12-23T09:05:48 IST" duration-ms="9565" status="PASS">
+        <test-method is-config="true" signature="initBrowser()[pri:0, instance:testclass.LoginTest@6221a451]" started-at="2022-12-24T08:25:21 IST" name="initBrowser" finished-at="2022-12-24T08:25:33 IST" duration-ms="12845" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testclass.LoginTest@51c668e3]" started-at="2022-12-23T09:05:48 IST" name="createObject" finished-at="2022-12-23T09:05:48 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclass.LoginTest@6221a451]" started-at="2022-12-24T08:25:34 IST" name="createObject" finished-at="2022-12-24T08:25:34 IST" duration-ms="204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createObject -->
-        <test-method signature="validateTitle()[pri:1, instance:testclass.LoginTest@51c668e3]" started-at="2022-12-23T09:05:48 IST" name="validateTitle" finished-at="2022-12-23T09:05:48 IST" duration-ms="437" status="PASS">
+        <test-method signature="validateTitle()[pri:1, instance:testclass.LoginTest@6221a451]" started-at="2022-12-24T08:25:34 IST" name="validateTitle" finished-at="2022-12-24T08:25:35 IST" duration-ms="720" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTitle -->
-        <test-method signature="verifyLogin()[pri:2, instance:testclass.LoginTest@51c668e3]" started-at="2022-12-23T09:05:48 IST" name="verifyLogin" finished-at="2022-12-23T09:05:53 IST" duration-ms="5119" status="PASS">
+        <test-method signature="verifyLogin()[pri:2, instance:testclass.LoginTest@6221a451]" started-at="2022-12-24T08:25:35 IST" name="verifyLogin" finished-at="2022-12-24T08:25:40 IST" duration-ms="5594" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testclass.LoginTest@51c668e3]" started-at="2022-12-23T09:06:04 IST" name="tearDown" finished-at="2022-12-23T09:06:05 IST" duration-ms="906" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testclass.LoginTest@6221a451]" started-at="2022-12-24T08:26:06 IST" name="tearDown" finished-at="2022-12-24T08:26:07 IST" duration-ms="1057" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -15,6 +15,7 @@ private	By searchbutton = By.xpath("//*[@id='nav-search-submit-button']");
 public HomePage(WebDriver driver)
 {
 	this.driver = driver;
+	
 }
 
 public void searchProduct()

@@ -49,7 +49,7 @@ public class TestCase {
 				.findElement(By.xpath("//*[@id='nav-flyout-ya-signin']//*[@class='nav-action-button']"));
 		signinbutton.click();
 		
-		driver.findElement(By.xpath("//*[@id='ap_email']")).sendKeys("8176867662");
+		driver.findElement(By.xpath("//*[@id='ap_email']")).sendKeys("email");
 		driver.findElement(By.xpath("//input[@id='continue']")).click();
 		
 	}
@@ -58,7 +58,7 @@ public class TestCase {
 	@Test(priority = 3)
 	public void enterPassword()
 	{
-		driver.findElement(By.xpath("//input[@id='ap_password']")).sendKeys("123456");
+		driver.findElement(By.xpath("//input[@id='ap_password']")).sendKeys("password");
 		driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
 		
 		

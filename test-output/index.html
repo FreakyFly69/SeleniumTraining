@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -122,6 +122,11 @@
                         <a href="#" panel-name="suite-Suite" title="testclass.HomeTest" class="method navigator-link" hash-for-method="verifyTitle">verifyTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testclass.BuyProductTest" class="method navigator-link" hash-for-method="verifyaddToCart">verifyaddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -137,21 +142,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testclass.HomeTest</span>
+              <span class="class-name">testclass.BuyProductTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validateSearch">
-                  </a> <!-- validateSearch -->
-                  <span class="method-name">validateSearch</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyTitle">
-                  </a> <!-- verifyTitle -->
-                  <span class="method-name">verifyTitle</span>
+                  <a name="verifyaddToCart">
+                  </a> <!-- verifyaddToCart -->
+                  <span class="method-name">verifyaddToCart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -178,6 +176,28 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testclass.HomeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSearch">
+                  </a> <!-- validateSearch -->
+                  <span class="method-name">validateSearch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTitle">
+                  </a> <!-- verifyTitle -->
+                  <span class="method-name">verifyTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -192,6 +212,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;testclass.LoginTest&quot;/&gt;
       &lt;class name=&quot;testclass.HomeTest&quot;/&gt;
+      &lt;class name=&quot;testclass.BuyProductTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -205,7 +226,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -231,28 +252,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateSearch')
-data.setCell(0, 2, 'testclass.HomeTest')
-data.setCell(0, 3, 10299);
+data.setCell(0, 1, 'verifyaddToCart')
+data.setCell(0, 2, 'testclass.BuyProductTest')
+data.setCell(0, 3, 14427);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyLogin')
-data.setCell(1, 2, 'testclass.LoginTest')
-data.setCell(1, 3, 5119);
+data.setCell(1, 1, 'validateSearch')
+data.setCell(1, 2, 'testclass.HomeTest')
+data.setCell(1, 3, 9775);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validateTitle')
+data.setCell(2, 1, 'verifyLogin')
 data.setCell(2, 2, 'testclass.LoginTest')
-data.setCell(2, 3, 437);
+data.setCell(2, 3, 5594);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyTitle')
 data.setCell(3, 2, 'testclass.HomeTest')
-data.setCell(3, 3, 92);
+data.setCell(3, 3, 1003);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateTitle')
+data.setCell(4, 2, 'testclass.LoginTest')
+data.setCell(4, 3, 720);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -267,9 +292,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testclass.BuyProductTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">initBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">testclass.HomeTest</span>
               <div class="ignored-methods-div">
@@ -294,37 +328,48 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">createObject</span>
-                <span class="method-start">9717 ms</span>
+                <span class="method-start">12924 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">validateTitle</span>
-                <span class="method-start">9770 ms</span>
+                <span class="method-start">13178 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyLogin</span>
-                <span class="method-start">10220 ms</span>
+                <span class="method-start">13912 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testclass.HomeTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">createObject</span>
-                <span class="method-start">15348 ms</span>
+                <span class="method-start">19514 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">validateSearch</span>
-                <span class="method-start">15349 ms</span>
+                <span class="method-start">19517 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyTitle</span>
-                <span class="method-start">25651 ms</span>
+                <span class="method-start">29297 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testclass.BuyProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">createObject</span>
+                <span class="method-start">30303 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyaddToCart</span>
+                <span class="method-start">30305 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testclass.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25934 ms</span>
+                <span class="method-start">44963 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
